@@ -1,7 +1,6 @@
 pragma solidity ^0.4.17;
 
 contract Adoption {
-    address[16] public adopters;
     address[17] public adopters;
 
     function adopt (uint petID) public returns(uint) {
@@ -11,7 +10,6 @@ contract Adoption {
         return petID;
     }
 
-    function getAdopters() public view returns(address[16]) {
     function getAdopters() public view returns(address[17]) {
         return adopters;
     }
